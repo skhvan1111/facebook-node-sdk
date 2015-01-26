@@ -503,7 +503,9 @@
         };
         
         function getUrlWithVersion(baseUrl){
-            return baseUrl + (opts.version ? opts.version + "/": "");
+            var url = baseUrl + (opts.version ? opts.version + "/": "");
+            console.log("FB url = %s", url);
+            return url;
         }
 
         function FacebookApiException(res) {
